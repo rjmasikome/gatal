@@ -1,0 +1,23 @@
+{
+  "name": "gatal",
+  "version": "0.0.1",
+  "description": "Observable streams for MQTT in node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node example/",
+    "test": "eslint . && mocha test/"
+  },
+  "keywords": [
+    "mqtt",
+    "stream",
+    "observable",
+    "rx"
+  ],
+  "author": "RJ Masikome",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.9.0",
+    "mqtt": "^2.13.1",
+    "rx": "^4.1.0"
+  }
+}
