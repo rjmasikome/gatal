@@ -1,23 +1,40 @@
 {
   "name": "gatal",
   "version": "0.0.1",
-  "description": "Observable streams for MQTT in node",
+  "description": "Observable MQTT Stream based on rx and MQTT.js",
   "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
   "scripts": {
-    "start": "node example/",
-    "test": "eslint . && mocha test/"
+    "start": "node example/index.js",
+    "dev": "nodemon example/index.js",
+    "test": "eslint . && mocha --exit test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmasikome/gatal.git"
   },
   "keywords": [
     "mqtt",
-    "stream",
     "observable",
+    "stream",
     "rx"
   ],
-  "author": "RJ Masikome",
+  "author": "RJ Masikome <rj@masiko.me>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjmasikome/gatal/issues"
+  },
+  "homepage": "https://github.com/rjmasikome/gatal#readme",
   "dependencies": {
-    "eslint": "^4.9.0",
     "mqtt": "^2.13.1",
     "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
   }
 }
