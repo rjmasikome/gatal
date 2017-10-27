@@ -10,6 +10,8 @@
   "scripts": {
     "start": "node example/index.js",
     "dev": "nodemon example/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test": "eslint . && mocha --exit test/"
   },
   "repository": {

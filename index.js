@@ -1,3 +1,1 @@
-const Gatal = require("./lib/Gatal.js");
-
-module.exports = Gatal;
+module.exports = require("./lib/Gatal.js");
